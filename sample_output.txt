@@ -1,0 +1,169 @@
+==================================================
+MatrixDice v1.2.0
+==================================================
+
+Generating random matrices...
+[OK] Face 1 generated
+[OK] Face 2 generated
+[OK] Face 3 generated
+[OK] Face 4 generated
+[OK] Face 5 generated
+[OK] Face 6 generated
+[OK] Cube validated
+
+Generating visualizations...
+[OK] output\cube_net.png
+[OK] output\cube_compact.png
+[OK] output\cube_isometric.png
+[OK] output\rotation_sequence.png
+[OK] output\matrix_gallery.png
+
+Saving JSON...
+[OK] matrixdice_save.json
+
+Running self-test...
+  [OK ] Cube generation
+  [OK ] Validation
+  [OK ] Rotations (integrity)
+  [OK ] Serialization/Deserialization
+  [OK ] Determinants preserved
+
+
+============================================================
+Current cube state (unfolded):
+============================================================
+--- TOP ---
+Face 5
+[[4 3 3]
+ [3 1 6]
+ [5 4 2]]
+Determinant : 5
+Rank        : 3
+Trace       : 7
+Invertible  : Yes
+Eigenvalues : [10.34, -0.15, -3.18]
+Condition # : 85.591
+
+--- LEFT ---
+Face 3
+[[3 0 8]
+ [1 6 7]
+ [1 3 5]]
+Determinant : 3
+Rank        : 3
+Trace       : 14
+Invertible  : Yes
+Eigenvalues : [10.91, 3.00, 0.09]
+Condition # : 263.111
+
+--- FRONT ---
+Face 1
+[[9 8 3]
+ [2 2 1]
+ [9 9 5]]
+Determinant : 1
+Rank        : 3
+Trace       : 16
+Invertible  : Yes
+Eigenvalues : [14.56, 1.39, 0.05]
+Condition # : 454.241
+
+--- RIGHT ---
+Face 4
+[[2 4 0]
+ [3 9 2]
+ [4 7 0]]
+Determinant : 4
+Rank        : 3
+Trace       : 11
+Invertible  : Yes
+Eigenvalues : [11.71, -0.36+0.46j, -0.36-0.46j]
+Condition # : 81.153
+
+--- BACK ---
+Face 2
+[[6 3 5]
+ [7 9 6]
+ [6 1 5]]
+Determinant : 2
+Rank        : 3
+Trace       : 20
+Invertible  : Yes
+Eigenvalues : [15.30, 0.03, 4.67]
+Condition # : 633.522
+
+--- BOTTOM ---
+Face 6
+[[0 2 2]
+ [3 0 3]
+ [1 2 2]]
+Determinant : 6
+Rank        : 3
+Trace       : 2
+Invertible  : Yes
+Eigenvalues : [5.02, -0.47, -2.56]
+Condition # : 12.173
+
+============================================================
+
+
+============================================================
+Current cube state (compact):
+============================================================
+                  Face 1 
+                  det = 1
+
+Face 5   Face 3   Face 6   Face 4 
+det = 5  det = 3  det = 6  det = 4
+
+                  Face 2 
+                  det = 2
+============================================================
+
+
+============================================================
+Cube Statistics
+============================================================
+Faces                     : 6
+Generation Strategy       : RANDOM_CONSTRUCTIVE
+Total Moves               : 4
+Average determinant       : 3.50
+Average trace             : 11.67
+Average rank              : 3.00
+Average condition number  : 254.965
+Maximum determinant       : 6
+Minimum determinant       : 1
+Largest eigenvalue        : 15.304
+Smallest eigenvalue       : -3.184
+Average matrix density    : 0.907
+Average sparsity          : 0.093
+Generation time           : 0.3035s
+Validation time           : 0.001673s
+Successful row operations : 5145
+Successful col operations : 4951
+Rejected operations       : 15817
+Generation restarts       : 0
+Cube Valid                : Yes
+============================================================
+
+
+============================================================
+MatrixDice v1.2.0
+============================================================
+Author          : MatrixDice Team
+License         : MIT
+Faces           : 6
+Generation Strategy: RANDOM_CONSTRUCTIVE
+Cube Valid      : Yes
+Moves           : 4
+Rotation History:
+  RIGHT
+  UP
+  LEFT
+  DOWN
+Face Statistics:
+  Determinants: [3, 2, 4, 1, 5, 6]
+  Traces     : [14, 20, 11, 16, 7, 2]
+============================================================
+
+Done.
